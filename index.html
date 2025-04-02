@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375px, initial-scale=1.0">
+    <title>Aaradhy Nursery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2E7D32',
+                        secondary: '#8BC34A'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        .search-input:focus { outline: none; }
+        .category-scroll::-webkit-scrollbar { display: none; }
+        .cart-badge {
+            position: fixed;
+            top: -5px;
+            right: -5px;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 5px;
+            border-radius: 9px;
+            background: #f44336;
+            color: white;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="px-4 h-14 flex items-center justify-between">
+            <img src="logo.png" alt="Aradhya Nursery" class="h-12"> 
+             <!-- Company Name -->
+            <h1 class="playfair text-primary text-2xl font-semibold">Aaradhya Nursery</h1>
+          
+        </div>
+       
+    </nav>
+
+    <main class="mt-28 mb-20 px-4">
+        <div class="relative rounded-xl overflow-hidden mb-6">
+            <img src="https://public.readdy.ai/ai/img_res/4bf7ea5d17cb0235ac267b8b1e4c2aba.jpg" class="w-full h-48 object-cover" alt="Hero">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-4">
+                <h1 class="playfair text-2xl font-semibold text-white mb-2">Bring Nature Inside</h1>
+                <p class="text-white/90 text-sm mb-3">Transform your space with our curated collection</p>
+              <a href="https://aaradya-nursery.mini.site" class="bg-white text-primary font-medium px-6 py-2 !rounded-button w-fit inline-block">Shop Now</a>
+            </div>
+        </div>
+
+<div class="category-scroll flex gap-2 overflow-x-auto mb-6 pb-1">
+    <a href="all-plants.html" class="bg-primary text-white px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center gap-2">
+        <i class="ri-plant-line"></i>All Plants
+    </a>
+    <a href="indoor-plants.html" class="bg-gray-100 px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center gap-2">
+        <i class="ri-leaf-line"></i>Indoor
+    </a>
+    <a href="outdoor-plants.html" class="bg-gray-100 px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center gap-2">
+        <i class="ri-sun-line"></i>Outdoor
+    </a>
+    <a href="Flowering-plants.html" class="bg-gray-100 px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center gap-2">
+        <i class="ri-flower-line"></i>Flowering plants
+    </a>
+    <a href="accessories.html" class="bg-gray-100 px-4 py-2 rounded-full text-sm whitespace-nowrap flex items-center gap-2">
+        <i class="ri-tools-line"></i>Accessories
+    </a>
+</div>
+
+
+</div>
+
+<div class="grid grid-cols-2 gap-4 mb-6">
+    <div class="product-card bg-white rounded-xl overflow-hidden cursor-pointer">
+        <img src="https://public.readdy.ai/ai/img_res/1f6cd9fd5bdc5d03546b0b3295a314d3.jpg" class="w-full aspect-square object-cover" alt="Plant 1">
+        <div class="p-3">
+            <h3 class="font-medium mb-1">Monstera Deliciosa</h3>
+            <p class="text-sm text-gray-600 mb-2">₹250</p>
+            <a href="https://aaradya-nursery.mini.site/products/78d36264-5095-4ef5-9397-b3464f878356" class="w-full bg-primary text-white text-sm py-2 !rounded-button text-center block">plant Now</a>
+        </div>
+    </div>
+    <div class="product-card bg-white rounded-xl overflow-hidden cursor-pointer">
+        <img src="https://public.readdy.ai/ai/img_res/0744ad709b7d178b9f436b7193c1a47d.jpg" class="w-full aspect-square object-cover" alt="Plant 2">
+        <div class="p-3">
+            <h3 class="font-medium mb-1">Snake Plant</h3>
+            <p class="text-sm text-gray-600 mb-2">$39.99</p>
+            <a href="https://aaradya-nursery.mini.site/products/d5a91974-cb99-41f2-a6d6-9747f6072241" class="w-full bg-primary text-white text-sm py-2 !rounded-button text-center block">plant Now</a>
+        </div>
+    </div>
+    <div class="product-card bg-white rounded-xl overflow-hidden cursor-pointer">
+        <img src="https://public.readdy.ai/ai/img_res/ad89af565816884a4fd7a342d0b40eea.jpg" class="w-full aspect-square object-cover" alt="Plant 3">
+        <div class="p-3">
+            <h3 class="font-medium mb-1">Peace Lily</h3>
+            <p class="text-sm text-gray-600 mb-2">$34.99</p>
+            <a href="https://aaradya-nursery.mini.site/products/44b9f15c-933d-4633-9a0f-c74cf0fe66ad" class="w-full bg-primary text-white text-sm py-2 !rounded-button text-center block">plant Now</a>
+        </div>
+    </div>
+    <div class="product-card bg-white rounded-xl overflow-hidden cursor-pointer">
+        <img src="anthoriam.png" class="w-full aspect-square object-cover" alt="Plant 4">
+        <div class="p-3">
+            <h3 class="font-medium mb-1">Anthoriam</h3>
+            <p class="text-sm text-gray-600 mb-2">$59.99</p>
+            <a href="https://aaradya-nursery.mini.site/products/81c271c6-d364-4cc7-9852-50a020863005" class="w-full bg-primary text-white text-sm py-2 !rounded-button text-center block">plant Now</a>
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="relative rounded-xl overflow-hidden mb-6">
+            <img src="https://public.readdy.ai/ai/img_res/ed6988e44b74b288b415d4f95d7fd79b.jpg" class="w-full h-24 object-cover" alt="Promo">
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-between p-4">
+                <div>
+                    <h3 class="text-white font-medium mb-1">Exclusive Plant Deals</h3>
+                    <p class="text-white/90 text-sm">Up to 30% off</p>
+                </div>
+                <a href="https://aaradya-nursery.mini.site" class="bg-white text-primary font-medium px-6 py-2 !rounded-button w-fit inline-block">Shop Now</a>
+            </div>
+        </div>
+    </main>
+
+      
+      
+      
+      
+      
+      
+
+<section class="mt-12 px-4">
+    <!-- Why Choose Us -->
+    <div class="text-center mb-10">
+        <h2 class="text-3xl font-semibold text-gray-800">Why Choose Us?</h2>
+        <p class="text-gray-600 mt-2">Providing quality plants & expert services for over 10 years.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+            <i class="ri-award-line text-4xl text-primary"></i>
+            <p class="text-gray-700 font-medium">10+ Years of Expertise</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+            <i class="ri-leaf-line text-4xl text-primary"></i>
+            <p class="text-gray-700 font-medium">Wide Variety of Plants</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+            <i class="ri-handshake-line text-4xl text-primary"></i>
+            <p class="text-gray-700 font-medium">B2B & B2C Wholesale Supply</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+            <i class="ri-brush-line text-4xl text-primary"></i>
+            <p class="text-gray-700 font-medium">Custom Landscaping Solutions</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+            <i class="ri-heart-line text-4xl text-primary"></i>
+            <p class="text-gray-700 font-medium">Sustainable & Eco-Friendly Practices</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center gap-4">
+            <i class="ri-customer-service-2-line text-4xl text-primary"></i>
+            <p class="text-gray-700 font-medium">Expert Plant Care Assistance</p>
+        </div>
+    </div>
+</section>
+
+<section class="mt-16 px-4">
+    <!-- Our Plant Categories -->
+    <div class="text-center mb-10">
+        <h2 class="text-3xl font-semibold text-gray-800">Our Plant Categories</h2>
+        <p class="text-gray-600 mt-2">Explore our wide range of plants for every space & purpose.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="ri-home-smile-line text-4xl text-primary"></i>
+            <h3 class="font-medium text-gray-800 mt-2">Indoor Plants</h3>
+            <p class="text-sm text-gray-600 mt-1">Low-maintenance, air-purifying plants for your home & office.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="ri-plant-line text-4xl text-primary"></i>
+            <h3 class="font-medium text-gray-800 mt-2">Outdoor Plants</h3>
+            <p class="text-sm text-gray-600 mt-1">Perfect for gardens, balconies, and open spaces.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="ri-flower-line text-4xl text-primary"></i>
+            <h3 class="font-medium text-gray-800 mt-2">Flowering Plants</h3>
+            <p class="text-sm text-gray-600 mt-1">Roses, hibiscus, orchids, and other vibrant blooms.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="ri-seedling-line text-4xl text-primary"></i>
+            <h3 class="font-medium text-gray-800 mt-2">Fruit Plants & Trees</h3>
+            <p class="text-sm text-gray-600 mt-1">Grow mango, guava, lemon, and more at home.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="ri-medicine-bottle-line text-4xl text-primary"></i>
+            <h3 class="font-medium text-gray-800 mt-2">Herbal & Medicinal Plants</h3>
+            <p class="text-sm text-gray-600 mt-1">Tulsi, Aloe Vera, Neem, and other healing plants.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <i class="ri-tree-line text-4xl text-primary"></i>
+            <h3 class="font-medium text-gray-800 mt-2">Bonsai & Exotic Plants</h3>
+            <p class="text-sm text-gray-600 mt-1">Aesthetic miniatures and rare plant varieties.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-gray-100 py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-playfair text-primary  mb-6">Bulk Orders & Business Collaboration</h2>
+        <p class="text-gray-700 mb-8">
+            We proudly supply plants in bulk for various businesses, organizations, and large-scale projects. Whether you're a hotel, corporate office, real estate developer, or event decorator, we have the perfect green solutions for you.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="ri-hotel-line text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-medium text-gray-800">Hotels & Resorts</h3>
+            <p class="text-gray-600 mt-2">Enhance your hospitality spaces with lush greenery and exotic plants.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="ri-building-line text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-medium text-gray-800">Corporate Offices</h3>
+            <p class="text-gray-600 mt-2">Boost employee well-being and workspace aesthetics with air-purifying plants.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="ri-community-line text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-medium text-gray-800">Real Estate & Builders</h3>
+            <p class="text-gray-600 mt-2">Supply green landscapes for residential and commercial projects.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="ri-store-line text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-medium text-gray-800">Retailers & Wholesalers</h3>
+            <p class="text-gray-600 mt-2">Partner with us for premium plants at the best wholesale rates.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="ri-calendar-event-line text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-medium text-gray-800">Event Decorators</h3>
+            <p class="text-gray-600 mt-2">Unique floral and greenery solutions for weddings and corporate events.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="ri-hand-heart-line text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-medium text-gray-800">Customized Corporate Gifting</h3>
+            <p class="text-gray-600 mt-2">Eco-friendly plant gifts for employees, clients, and special occasions.</p>
+        </div>
+    </div>
+
+
+
+    <!-- plant care Section -->
+ <section class="pt-2 pb-16 px-4">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800">plant care tips </h2>
+            <p class="text-gray-500">Learn, grow, and Feel the presence.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- tip 1 -->
+            <div class="bg-primary shadow-md rounded-lg overflow-hidden">
+                <img src="https://public.readdy.ai/ai/img_res/11f629b9a529579aca9ded14601370f8.jpg" alt="Commerce" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">Water Your Plants Properly</h4>
+                    <p class="text-white text-sm">Learn the best watering techniques for different types of plants.</p>
+                    <div class="flex justify-between items-center mt-4 gap-4">
+                      
+                    </div>
+                </div>
+            </div>
+            
+            
+               
+            <!-- tip 2 -->
+            <div class="bg-primary shadow-md rounded-lg overflow-hidden">
+                <img src="https://public.readdy.ai/ai/img_res/a320c6ff650f5a951059182a4c57bfac.jpg" alt="Commerce" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h4 class="text-white font-semibold">Perfect Light Conditions</h4>
+                    <p class="text-white text-sm">Understanding light requirements for healthy plant growth.</p>
+                    <div class="flex justify-between items-center mt-4 gap-4">
+                      
+                    </div>
+                </div>
+            </div>
+          
+         
+         
+       <section class="px-4 pb-16 flex justify-center">
+    <div class="max-w-xl w-full text-center">  
+        
+       
+       <!-- Frequently Asked Questions -->
+<div class="bg-gray-100 p-6 rounded-lg mt-10 w-full max-w-md mx-auto">
+    <h2 class="text-2xl font-semibold text-primary text-center">Frequently Asked Questions</h2>
+    <div class="mt-4">
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">What types of plants do you offer?</summary>
+            <p class="text-sm text-gray-600 mt-2">We offer a wide range of plants, including indoor plants, outdoor plants, flowering plants, medicinal plants, fruit plants, bonsai, succulents, shrubs, and trees. We also cater to bulk orders for landscaping and commercial projects.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Do you supply plants in bulk for businesses, landscapers, or developers?</summary>
+            <p class="text-sm text-gray-600 mt-2">Yes, we specialize in large-scale plant supply for commercial projects, landscapers, corporate offices, real estate developers, and government contracts. We can fulfill bulk orders with customized plant selections.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Can I visit your nursery and buy plants directly?</summary>
+            <p class="text-sm text-gray-600 mt-2">Absolutely! We welcome walk-in customers as well as bulk buyers. Our nursery is open throughout the week, and our expert team is always available to assist you in choosing the right plants.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Do you provide nationwide delivery for bulk orders?</summary>
+            <p class="text-sm text-gray-600 mt-2">Yes, we have a well-established logistics network to deliver plants safely across the country. Our plants are packaged carefully to ensure they arrive in perfect condition.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">What are the best low-maintenance plants for homes and offices?</summary>
+            <p class="text-sm text-gray-600 mt-2">For homes and offices, we recommend snake plants, pothos, ZZ plants, rubber plants, peace lilies, and spider plants. These require minimal care and thrive in indoor environments.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Do you offer landscaping services?</summary>
+            <p class="text-sm text-gray-600 mt-2">Yes, we provide complete landscaping solutions, from design consultation to plant selection and installation. We work with residential projects, commercial properties, resorts, and public spaces.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">How do I take care of my outdoor plants?</summary>
+            <p class="text-sm text-gray-600 mt-2">Outdoor plants need proper sunlight, well-draining soil, and regular watering. We provide customized care guides depending on the plant variety, climate, and season.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Can I get assistance in selecting plants for my garden?</summary>
+            <p class="text-sm text-gray-600 mt-2">Of course! Our plant experts can help you choose the best plants based on your location, soil type, climate, and personal preferences.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Do you offer organic fertilizers and plant care products?</summary>
+            <p class="text-sm text-gray-600 mt-2">Yes, we stock high-quality organic fertilizers, potting mixes, pest control solutions, and soil conditioners to keep your plants healthy.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">What are the best plants for balconies or rooftop gardens?</summary>
+            <p class="text-sm text-gray-600 mt-2">For balconies and rooftops, we recommend hardy plants like bougainvillea, areca palm, jade plants, money plants, hibiscus, and dwarf fruit trees, which thrive in open environments.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Can you provide plants for events and corporate gifting?</summary>
+            <p class="text-sm text-gray-600 mt-2">Yes, we supply plants for weddings, corporate events, hotels, and gifting purposes. We also offer personalized pot branding for corporate gifts.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Do you have seasonal plants and flowers available?</summary>
+            <p class="text-sm text-gray-600 mt-2">Yes, we offer a variety of seasonal flowering plants, including marigolds, petunias, dahlias, and chrysanthemums, based on availability.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">How can I prevent pests from damaging my plants?</summary>
+            <p class="text-sm text-gray-600 mt-2">Regular monitoring, proper watering, and using organic pesticides can help. We also offer natural pest control solutions that are safe for your plants.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Do you sell rare and exotic plants?</summary>
+            <p class="text-sm text-gray-600 mt-2">Yes, we have a special collection of exotic plants, including bonsai, orchids, air plants, and rare tropical species. Availability depends on the season.</p>
+        </details>
+
+        <details class="bg-white p-3 rounded-lg mb-2">
+            <summary class="font-semibold text-gray-700 cursor-pointer">Do you offer after-sales support or plant maintenance services?</summary>
+            <p class="text-sm text-gray-600 mt-2">Yes, we provide guidance on plant care even after purchase. For large-scale landscaping and corporate clients, we offer scheduled maintenance services to keep the plants healthy.</p>
+        </details>
+    </div>
+</div>
+
+    </div>
+</section>
+  
+  
+ <section id="contact" class="bg-gray-100 py-10 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold text-primary mb-4">Get in Touch</h2>
+        <p class="text-gray-600 mb-6">Have a question? Feel free to reach out to us!</p>
+
+
+        <div class="mt-6 text-gray-700">
+            <p><strong>Phone:</strong> 
+                <a href="tel:+917588953451" class="text-primary hover:underline">+91 75889 53451</a>
+            </p>
+            <p><strong>Email:</strong> 
+                <a href="mailto:sundarzore7033@gmail.com" class="text-primary hover:underline">sundarzore7033@gmail.com</a>
+            </p>
+            <p><strong>Address:</strong> Nhaveli Rewtewadi, Sawantwadi, Sindhudurg, Maharashtra 416514, India (Aros, Maharashtra 416514, India)</p>
+        </div>
+    </div>
+</section>
+  
+
+    <script>
+        
+
+         // Select all category buttons
+const categoryButtons = document.querySelectorAll(".category-scroll button");
+
+// Function to update active button state
+categoryButtons.forEach(btn => {
+    btn.addEventListener("click", function () {
+        // Remove the active (green) class from all buttons
+        categoryButtons.forEach(b => {
+            b.classList.remove("bg-primary", "text-white"); // Remove active state
+            b.classList.add("bg-gray-100", "text-gray-700"); // Add default state
+        });
+
+        // Add active class to clicked button
+        this.classList.add("bg-primary", "text-white"); 
+        this.classList.remove("bg-gray-100", "text-gray-700");
+    });
+});
+    </script>
+</body>
+</html>
